@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLIntroViewController">
+            <connections>
+                <outlet property="feedBackButton" destination="8Ad-w6-iyt" id="9iG-V8-XDc"/>
+                <outlet property="imageOfBoard" destination="b3s-tX-GpA" id="aXg-g8-HrW"/>
+                <outlet property="imageOfFan" destination="Rp4-ra-FZq" id="emb-AH-8i4"/>
+                <outlet property="soundButton" destination="Djc-AT-NT3" id="qrE-0W-lI1"/>
+                <outlet property="startGameButton" destination="cQy-gh-MhN" id="dyR-kx-Zl3"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="vHL-Bf-c6q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="fEo-Ee-IFx">
+                    <rect key="frame" x="91" y="68" width="138" height="112"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ad-w6-iyt">
+                    <rect key="frame" x="259" y="41" width="41" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="btn_feedback.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="feedBack:" destination="-1" eventType="touchUpInside" id="xCo-TX-b9s"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djc-AT-NT3">
+                    <rect key="frame" x="262" y="82" width="34" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="btn_music_off.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="soundSwitch:" destination="-1" eventType="touchUpInside" id="2Xt-9J-231"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_cn.png" translatesAutoresizingMaskIntoConstraints="NO" id="CrP-hz-j5s">
+                    <rect key="frame" x="40" y="197" width="240" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQy-gh-MhN">
+                    <rect key="frame" x="36" y="267" width="249" height="61"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="start_cn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startGame:" destination="-1" eventType="touchUpInside" id="128-Uq-dWI"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meadow.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tYl-Kh-Uq2">
+                    <rect key="frame" x="0.0" y="68" width="328" height="412"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree.png" translatesAutoresizingMaskIntoConstraints="NO" id="cqt-Ht-WlR">
+                    <rect key="frame" x="26" y="387" width="52" height="73"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mill.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ib2-0H-js3">
+                    <rect key="frame" x="250" y="405" width="22" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fan.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rp4-ra-FZq">
+                    <rect key="frame" x="248" y="408" width="27" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="b3s-tX-GpA">
+                    <rect key="frame" x="26" y="406" width="54" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earch_hole.png" translatesAutoresizingMaskIntoConstraints="NO" id="bIT-ZB-Wcw">
+                    <rect key="frame" x="0.0" y="453" width="320" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mole.png" translatesAutoresizingMaskIntoConstraints="NO" id="jjh-ly-jm9">
+                    <rect key="frame" x="111" y="426" width="23" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bigicon.png" width="128" height="128"/>
+        <image name="board.png" width="54" height="36"/>
+        <image name="btn_feedback.png" width="34" height="36"/>
+        <image name="btn_music_off.png" width="34" height="36"/>
+        <image name="earch_hole.png" width="384" height="27"/>
+        <image name="fan.png" width="42" height="42"/>
+        <image name="meadow.png" width="384" height="512"/>
+        <image name="mill.png" width="23" height="39"/>
+        <image name="mole.png" width="24" height="34"/>
+        <image name="sky.png" width="384" height="512"/>
+        <image name="start_cn.png" width="194" height="61"/>
+        <image name="title_cn.png" width="234" height="50"/>
+        <image name="tree.png" width="51" height="94"/>
+    </resources>
+</document>
